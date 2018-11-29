@@ -186,11 +186,15 @@ void Menu(ProList *head){
 }
 
 int main() {
+    char name[25] = {'w','o','w','\0'};
+    float price = 25.0;
+    float weight = 10.0;
 
     ProList *head;
     InitiateList(&head);
 
-    MenuChoice(head, 'a');
+    //MenuChoice(head, 'a');
+    InsertAtBeginning(name, price, weight, &head);
     PrintList(head);
 
     return 0;
